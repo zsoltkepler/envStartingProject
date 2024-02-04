@@ -10,7 +10,7 @@ env:
 jobs:
   test:
     env: 
-      MONGODB_USERNAME: db-username
+      MONGODB_USERNAME: ${{ secrets.MONGODB_USERNAME }}
       MONGODB_PASSWORD: db-password
       MONGODB_CLUSTER_ADDRESS: my-mogno.cluster.com
       PORT: 8080
